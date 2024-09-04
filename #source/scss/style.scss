@@ -1,0 +1,76 @@
+@import "nulestyle.scss"; //Подключение обнуляющих стилей
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	width: 100%;
+	font-family: "IBM Plex Mono", monospace;
+	//font-family: "Manrope", sans-serif;
+}
+.container {
+	max-width: 1154px;
+	margin: 0 auto;
+}
+.header {
+	padding-top: 35px;
+	padding-bottom: 94px;
+	background-image: url("/img/Header__bg.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50%;
+	font-weight: 400;
+	& nav {
+		margin-bottom: 255px;
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+	}
+	&__logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 130px;
+		height: 39px;
+		padding: 0px 10px;
+		background-color: #000000;
+		border-radius: 30px;
+	}
+
+	&__menu {
+		padding-top: 4px;
+		display: flex;
+		& li {
+			text-transform: lowercase;
+			margin-right: 50px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		& a {
+			text-decoration: none;
+			font-size: 18px;
+			letter-spacing: -0.04em;
+			color: #fff;
+		}
+	}
+
+	&__text {
+		padding-left: 11px;
+		& p {
+			margin-bottom: 29px;
+			width: 430px;
+			font-size: 20px;
+			line-height: 28px;
+			letter-spacing: -0.021em;
+			color: #fff;
+		}
+		& h1 {
+			width: 919px;
+			font-size: 80px;
+			line-height: 70px;
+			letter-spacing: -0.03em;
+			color: #1bff07;
+		}
+	}
+}

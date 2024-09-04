@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 100%;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-family: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.container {
+  max-width: 1154px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 35px;
+  padding-bottom: 94px;
+  background-image: url("/img/Header__bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  font-weight: 400;
+}
+.header nav {
+  margin-bottom: 255px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 39px;
+  padding: 0px 10px;
+  background-color: #000000;
+  border-radius: 30px;
+}
+.header__menu {
+  padding-top: 4px;
+  display: flex;
+}
+.header__menu li {
+  text-transform: lowercase;
+  margin-right: 50px;
+}
+.header__menu li:last-child {
+  margin-right: 0;
+}
+.header__menu a {
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+.header__text {
+  padding-left: 11px;
+}
+.header__text p {
+  margin-bottom: 29px;
+  width: 430px;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.021em;
+  color: #fff;
+}
+.header__text h1 {
+  width: 919px;
+  font-size: 80px;
+  line-height: 70px;
+  letter-spacing: -0.03em;
+  color: #1bff07;
+}
