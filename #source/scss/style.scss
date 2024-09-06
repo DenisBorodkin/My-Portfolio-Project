@@ -6,6 +6,7 @@ html {
 body {
 	width: 100%;
 	font-family: "IBM Plex Mono", monospace;
+	background-color: #000000;
 	//font-family: "Manrope", sans-serif;
 }
 .container {
@@ -13,12 +14,13 @@ body {
 	margin: 0 auto;
 }
 .header {
+	margin-bottom: 180px;
 	padding-top: 35px;
-	padding-bottom: 94px;
+	padding-bottom: 85px;
 	background-image: url("/img/Header__bg.png");
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position: 50%;
+	background-position:50%;
 	font-weight: 400;
 	& nav {
 		margin-bottom: 255px;
@@ -45,6 +47,9 @@ body {
 			margin-right: 50px;
 			&:last-child {
 				margin-right: 0;
+			}
+			& :hover {
+				color: #1bff07;
 			}
 		}
 		& a {
@@ -73,4 +78,64 @@ body {
 			color: #1bff07;
 		}
 	}
+}
+
+.projects {
+	margin-bottom: 150px;
+	&__title {
+		margin-bottom: 68px;
+	}
+
+	&__cards {
+		margin-bottom: 80px;
+		& article {
+			position: relative;
+			& img {
+				height: 550px;
+			}
+			& h3 {
+				position: absolute;
+				top: 427px;
+				left: 53px;
+				font-weight: 400;
+				font-size: 35px;
+				letter-spacing: -0.03em;
+				color: #fff;
+			}
+			& p {
+				position: absolute;
+				left: 51px;
+				top: 476px;
+				font-weight: 400;
+				font-size: 30px;
+				letter-spacing: -0.04em;
+				color: #fff;
+			}
+		}
+	}
+	&__link {
+		& button {
+			width: 582px;
+			height: 153px;
+			padding: 26px 39px;
+			background-color: #1bff07;
+			color: #000000;
+			border-radius: 5px;
+			font-weight: 400;
+			font-size: 30px;
+			letter-spacing: -0.04em;
+			text-align: center;
+		}
+		& button:hover {
+			border: 1px solid #1bff07;
+			background-color: #000000;
+			color: #1bff07;
+		}
+	}
+}
+.title {
+	font-weight: 400;
+	font-size: 55px;
+	letter-spacing: -0.03em;
+	color: #fff;
 }
