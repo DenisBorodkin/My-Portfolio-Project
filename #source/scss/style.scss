@@ -4,7 +4,6 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	width: 100%;
 	font-family: "IBM Plex Mono", monospace;
 	background-color: #000000;
 	//font-family: "Manrope", sans-serif;
@@ -19,8 +18,7 @@ body {
 	padding-bottom: 85px;
 	background-image: url("../img/Header__bg.png");
 	background-repeat: no-repeat;
-	background-size: contain;
-	background-position:50%;
+	background-size: cover;
 	font-weight: 400;
 	& nav {
 		margin-bottom: 255px;
@@ -81,7 +79,7 @@ body {
 }
 
 .projects {
-	margin-bottom: 150px;
+	margin-bottom: 180px;
 	&__title {
 		margin-bottom: 68px;
 	}
@@ -120,7 +118,7 @@ body {
 			padding: 26px 39px;
 			background-color: #1bff07;
 			color: #000000;
-			border-radius: 5px;
+			border-radius: 10px;
 			font-weight: 400;
 			font-size: 30px;
 			letter-spacing: -0.04em;
@@ -138,4 +136,46 @@ body {
 	font-size: 55px;
 	letter-spacing: -0.03em;
 	color: #fff;
+}
+.competencies {
+	margin-bottom: 150px;
+	&__title {
+		margin-bottom: 75px;
+	}
+
+	&__cards {
+		& article {
+			margin-bottom: 63px;
+			& img {
+				margin-bottom: 29px;
+				height: 44px;
+				width: 45px;
+			}
+			& h3 {
+				margin-bottom: 31px;
+				padding-left: 2px;
+				font-weight: 400;
+				font-size: 35px;
+				letter-spacing: -0.03em;
+				color: #1bff07;
+			}
+			& p {
+				width: 800px;
+				font-weight: 400;
+				font-size: 22px;
+				line-height: 29px;
+				letter-spacing: -0.048em;
+				color: #fff;
+			}
+		}
+		& article :last-child {
+			margin-bottom: 0;
+		}
+		& .title-wrap {
+			margin-top: -12px;
+			margin-bottom: 18px;
+			width: 655px;
+			line-height: 43px;
+		}
+	}
 }
